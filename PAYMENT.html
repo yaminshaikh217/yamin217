@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Baloo 2", cursive;
+      }
+      body {
+        /* background-color: #f2f2f2; */
+        margin: 15px 30px;
+        padding: 8px;
+        font-size: 20px;
+      }
+      .container {
+        background-color: #f2f2f2;
+        /* margin: auto; */
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid lightgray;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="date"],
+      input[type="textarea"],
+      input[type="number"],
+      select {
+        background-color: #ccc;
+        border-radius: 4px;
+        border: 2px solid #ccc;
+        padding: 11px;
+        margin: 18px;
+        width: 100%;
+      }
+      fieldset {
+        border: 2px solid #ffffff;
+      }
+      .btn {
+        width: 11%;
+        padding: 8px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin: 11px;
+        background-color: rgb(255, 255, 255);
+      }
+      .btn:hover {
+        background-color: lightgray;
+      }
+      h2 {
+        text-align: center;
+      }
+      .cont{
+        height: 50%;
+        width: 50%;
+        padding-left: 55px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+    <div class="container">
+      <form action="#">
+        <h2>User Information</h2>
+        <hr />
+        <p>
+          Name: <input type="text" name="name" id="name" / required
+          placeholder="Enter Your Name">
+        </p>
+        <fieldset>
+          <legend>Gender</legend>
+          <p>
+            Male <input type="radio" name="gender" id="male" / required> Female
+            <input type="radio" name="gender" id="female" />
+          </p>
+        </fieldset>
+        <p>
+          Email :
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="abcd@gmail.com"
+          />
+        </p>
+        <p>
+          Adress :
+          <textarea
+            name="adress"
+            id="adress"
+            cols="100"
+            rows="10"
+            required
+            placeholder="Your Address"
+          ></textarea>
+        </p>
+        <p>
+          Pincode:
+          <input
+            type="number"
+            name="pincode"
+            id="pincode"
+            required
+            placeholder="123456"
+          />
+        </p>
+        <h2>Payment Info.</h2>
+        <hr />
+        <p>
+          Card type:
+          <select name="card" id="card" required>
+            <option value="">--select card type--</option>
+            <option value="Visa">visa</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Master card">Master card</option>
+          </select>
+        </p>
+        <p>
+          Card Number:
+          <input
+            type="number"
+            name="card_number"
+            id="card_number"
+            required
+            placeholder="1111-2222-3333-4444"
+          />
+        </p>
+        <p>
+          CVV:
+          <input
+            type="password"
+            name="CVV"
+            id="CVV"
+            required
+            placeholder="123"
+          />
+        </p>
+        <p>
+          Expiry Date:
+          <input type="date" name="exp_date" id="exp_date" required />
+        </p>
+        <input type="submit" value="Pay now" class="btn" />
+        <input type="reset" value="reset" class="btn" />
+      </form>
+    </div>
+  </div>
+  </body>
+</html>

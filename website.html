@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Practice</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Do Hyeon", sans-serif;
+      background: url(adobe.jpg);
+      padding: 0px;
+      margin: 0px;
+      color: whitesmoke;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      /* height: 2000px; */
+    }
+    .left {
+      /* border: 2px solid green; */
+      display: inline-block;
+      position: absolute;
+      top: 7px;
+      left: 20px;
+    }
+    .left img {
+      width: 48px;
+      filter: drop-shadow(2px 4px 6px black);
+    }
+    .left div {
+      font-size: 21px;
+      line-height: 33px;
+      text-align: center;
+      color: rgb(125, 47, 170);
+    }
+
+    .left div:hover {
+      color: whitesmoke;
+      cursor: pointer;
+    }
+
+    .mid {
+      /* border: 2px solid yellow; */
+      display: block;
+      margin: 11px auto;
+      width: 35%;
+    }
+    .navbar li {
+      font-size: 23px;
+      display: inline-block;
+    }
+    .navbar li a {
+      color: rgb(253, 253, 253);
+      font-size: 20px;
+      padding: 11px 28px;
+    }
+
+    .navbar li a:hover {
+      color: rgb(180, 34, 34);
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .right {
+      /* border: 2px solid orange; */
+      display: inline-block;
+      position: absolute;
+      top: 22px;
+      right: 22px;
+    }
+    .btn {
+      font-family: "Do Hyeon", sans-serif;
+      padding: 3px 12px;
+      margin: 7px 10px;
+      border-radius: 11px;
+      background-color: #d64646;
+      font-size: 16px;
+      color: whitesmoke;
+    }
+    .btn:hover {
+      background-color: rgb(102, 20, 20);
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="pro.png" alt="" />
+        <div>Welcome! To Cinecome</div>
+      </div>
+
+      <div class="mid">
+        <ul class="navbar">
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">Home</a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">Courses</a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">About us</a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">Social</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <button class="btn">Email</button><button class="btn">Call us</button>
+      </div>
+    </header>
+  </body>
+</html>
